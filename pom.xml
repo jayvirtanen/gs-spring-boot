@@ -48,6 +48,9 @@
         <groupId>org.owasp</groupId>
         <artifactId>dependency-check-maven</artifactId>
         <version>12.2.0</version>
+        <configuration>
+          <nvdApiKey>${env.NVDAPIKEY}</nvdApiKey>
+        </configuration>
               <executions>
                   <execution>
                       <goals>
@@ -56,7 +59,20 @@
                   </execution>
               </executions>
       </plugin>
+      <plugin>
+        <groupId>com.google.cloud.tools</groupId>
+        <artifactId>jib-maven-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <to>
+            <image>spring-image</image>
+            <auth>
+              <username>${env.REGISTRY_USERNAME}</username>
+              <password>${env.REGISTRY_PASSWORD}</password>
+           </auth>
+          </to>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
-
 </project>
