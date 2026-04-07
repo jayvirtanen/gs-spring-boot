@@ -71,6 +71,9 @@
               <password>${env.REGISTRY_PASSWORD}</password>
            </auth>
           </to>
+          <from>
+            <image>eclipse-temurin:17.0.18_8-jre-noble</image>
+          </from>
           <container>
              <mainClass>com.example.springboot.Application</mainClass>
           </container>
