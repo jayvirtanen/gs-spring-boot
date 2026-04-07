@@ -65,14 +65,14 @@
         <version>3.5.1</version>
         <configuration>
           <to>
-            <image>docker.io/spring-image</image>
+            <image>janivirtanen/spring-image</image>
             <auth>
               <username>${env.REGISTRY_USERNAME}</username>
               <password>${env.REGISTRY_PASSWORD}</password>
            </auth>
           </to>
           <from>
-            <image>openjdk:17-jdk-slim</image>
+            <image>openjdk@sha256:565d3643a78a657ca03e85c110af9579a07e833d6bcc14f475249c521b5c5d74</image>
           </from>
           <container>
              <mainClass>com.example.springboot.Application</mainClass>
