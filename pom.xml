@@ -71,6 +71,9 @@
               <password>${env.REGISTRY_PASSWORD}</password>
            </auth>
           </to>
+          <container>
+             <mainClass>com.example.springboot.Application</mainClass>
+          </container>
         </configuration>
       </plugin>
     </plugins>
