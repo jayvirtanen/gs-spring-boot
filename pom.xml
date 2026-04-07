@@ -72,11 +72,7 @@
            </auth>
           </to>
           <from>
-            <image>docker.io/eclipse-temurin@sha256:7bd478d81bf969fa4024fc50d73f263075cee8ad850e8e2b5cbfbb0832756ae6</image>
-           <auth>
-              <username>${env.REGISTRY_USERNAME}</username>
-              <password>${env.REGISTRY_PASSWORD}</password>
-           </auth>
+            <image>openjdk:17-jdk-slim</image>
           </from>
           <container>
              <mainClass>com.example.springboot.Application</mainClass>
